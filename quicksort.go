@@ -39,9 +39,7 @@ func main() {
 	var n int
 	fmt.Scan(&n)
 	fmt.Println(n)
-	// for i, _ := range a {
-	// 	fmt.Scanf()
-	// }
+
 	for i := 0; i < n; i++ {
 		fmt.Scanf("%d", &a[i])
 	}
