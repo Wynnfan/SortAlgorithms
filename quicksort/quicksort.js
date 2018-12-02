@@ -1,4 +1,4 @@
-
+// 采用ES6标准
 var array = [5, 9, 3, 6, 11];
 
 function quickSort(left, right) {
@@ -7,8 +7,7 @@ function quickSort(left, right) {
         return;
     }
 
-    var i = left, j = right, temp = array[left];
-    var t;
+    let i = left, j = right, temp = array[left];
 
     while (i < j) {
 
@@ -21,17 +20,13 @@ function quickSort(left, right) {
         }
 
         if (i < j) {
-            t = array[i];
-            array[i] = array[j];
-            array[j] = t;
+			[array[i], array[j]] = [array[j], array[i]];
         }
     }
 
 
 
-    t = array[left];
-    array[left] = array[i];
-    array[i] = t;
+    [array[i], array[left]] = [array[left], array[i]];
 
     quickSort(left, i-1);
     quickSort(i+1, right);
