@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	a := []int{1, 5, 3, 7, 2}
+	a := []int{3, 6, 7, 4, 2, 1, 5}
 
-	SelectSort(5, a)
+	SelectSort(7, a)
 
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 7; i++ {
 		fmt.Printf("%d ", a[i])
 	}
 }
