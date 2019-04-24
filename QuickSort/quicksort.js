@@ -1,5 +1,5 @@
 // 采用ES6标准
-var array = [5, 9, 3, 6, 11];
+let array = [5, 9, 3, 6, 11];
 
 function quickSort(left, right) {
 
