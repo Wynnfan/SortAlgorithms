@@ -17,6 +17,7 @@ func main() {
 }
 
 // 冒泡过程
+// 两两交换  会将最大值或最小值交换到数组最后位置
 func BubbleSort(n int, a []int) {
 
 	for i := 0; i < n; i++ {
